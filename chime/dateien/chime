@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Play one chime by hand: chime done | ask | approve
+set -euo pipefail
+name="${1:-done}"
+dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(cygpath -w "$dir/chime.ps1")" -Name "$name"

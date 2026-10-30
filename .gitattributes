@@ -1,0 +1,4 @@
+# say ist ein Shell-Skript ohne Endung und bricht unter bash mit CRLF.
+# Deshalb LF fuer alles; die Windows-Hosts kommen damit zurecht.
+* text=auto eol=lf
+*.wav binary

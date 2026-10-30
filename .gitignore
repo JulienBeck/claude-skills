@@ -1,0 +1,16 @@
+# Fremde Skills - kommen aus dem Marketplace, nicht aus diesem Repo.
+# Neue eigene Skills tauchen automatisch im git status auf.
+agents-sdk/
+cloudflare/
+cloudflare-email-service/
+cloudflare-one/
+cloudflare-one-migrations/
+durable-objects/
+sandbox-sdk/
+turnstile-spin/
+web-perf/
+workers-best-practices/
+wrangler/
+
+.DS_Store
+Thumbs.db

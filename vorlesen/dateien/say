@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Liegt neben speak-ctl.ps1 und findet es ueber den eigenen Ort - so steckt
+# nirgends ein Benutzername fest im Skript.
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+script="$(cygpath -w "$here/speak-ctl.ps1" 2>/dev/null || echo "$here/speak-ctl.ps1")"
+exec powershell -NoProfile -ExecutionPolicy Bypass \
+  -File "$script" "${1:-toggle}"
